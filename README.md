@@ -1,3 +1,4 @@
+![SQLmap Workflow Banner](SQLmap.webp)
 
 # **🔥 Hacking Databases Like a Pro: The Ultimate SQL Injection Guide with SQLmap**  
 
