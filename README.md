@@ -35,6 +35,16 @@ SQL injection remains one of the most critical web application vulnerabilities, 
 > All techniques described must only be performed on systems you own or have explicit written permission to test. Unauthorized testing is illegal.
 
 ---
+## *Index*
+- **[Understanding --level and --risk in SQLmap](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/edit/main/README.md#understanding---level-and---risk-in-sqlmap)**
+- **Vulnerability Identification**
+- **Database Enumeration**
+- **Table Discovery**
+- **Column Extraction**
+- **Password Retrieval & CSV Export Procedure**
+- **Full Database Export in SQL Format**
+- **Optimizing Detection**
+- **Bypassing WAFs**
 
 ## **Understanding SQLmap's Core Functionality**
 SQLmap is an open-source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws. Key capabilities include:
