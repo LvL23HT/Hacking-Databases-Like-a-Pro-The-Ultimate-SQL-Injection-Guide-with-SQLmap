@@ -83,7 +83,7 @@ SQLmap allows fine-tuning of tests using:
 
 ### **Phase 1: Vulnerability Identification**
 ```bash
-sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk_2
+sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2
 ```
 - `--batch`: Runs with default options without user interaction
 - Checks for basic error-based SQL injection
