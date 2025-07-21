@@ -35,16 +35,17 @@ SQL injection remains one of the most critical web application vulnerabilities, 
 > All techniques described must only be performed on systems you own or have explicit written permission to test. Unauthorized testing is illegal.
 
 ---
-## *Index*
+## *Quick Navigation*
 - **[Understanding --level and --risk in SQLmap](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#understanding---level-and---risk-in-sqlmap)**
-- **Vulnerability Identification**
-- **Database Enumeration**
-- **Table Discovery**
-- **Column Extraction**
-- **Password Retrieval & CSV Export Procedure**
-- **Full Database Export in SQL Format**
-- **Optimizing Detection**
-- **Bypassing WAFs**
+- **[Vulnerability Identification](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#phase-1-vulnerability-identification)**
+- **[Database Enumeration](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#phase-2-database-enumeration)**
+- **[Table Discovery](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#phase-3-table-discovery)**
+- **[Column Extraction](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#phase-4-column-extraction)**
+- **[Password Retrieval & CSV Export Procedure](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#password-retrieval--csv-export-procedure)**
+- **[Full Database Export in SQL Format](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#phase-5-full-database-export-in-sql-format)**
+- **[Optimizing Detection](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#optimizing-detection)**
+- **[Bypassing WAFs](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#bypassing-wafs)**
+---
 
 ## **Understanding SQLmap's Core Functionality**
 SQLmap is an open-source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws. Key capabilities include:
