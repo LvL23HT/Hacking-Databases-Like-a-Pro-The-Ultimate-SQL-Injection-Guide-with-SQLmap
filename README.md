@@ -26,12 +26,13 @@ Perfect for **cybersecurity enthusiasts, ethical hackers, and IT professionals**
 SQL injection remains one of the most critical web application vulnerabilities, consistently ranking top in the OWASP Top 10. As cybersecurity professionals, understanding these vulnerabilities is paramount to building robust defenses. This guide provides a complete, ethical framework for:
 
 - Identifying SQL injection vulnerabilities
-- Using SQLmap for authorized penetration testing
+- Using [SQLmap](https://github.com/sqlmapproject/sqlmap) for authorized penetration testing
+- Using [Hashcat](https://github.com/hashcat/hashcat) to break the hash encryption if necessary
 - Properly documenting findings in CSV format
 - Implementing defensive measures
 
 **Legal Disclaimer:**  
-All techniques described must only be performed on systems you own or have explicit written permission to test. Unauthorized testing is illegal.
+> All techniques described must only be performed on systems you own or have explicit written permission to test. Unauthorized testing is illegal.
 
 ---
 
@@ -318,6 +319,7 @@ This guide provides a complete ethical framework for SQL injection testing using
 ✅ Use `--dump-format=CSV` for standardized reporting  
 ✅ Focus on remediation, not just vulnerability discovery  
 ✅ Maintain strict confidentiality of findings  
+
 
 **Continuous Learning Resources:**  
 - OWASP SQL Injection Prevention Cheat Sheet  
