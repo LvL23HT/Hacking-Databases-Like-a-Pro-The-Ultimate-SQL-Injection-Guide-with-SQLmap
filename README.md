@@ -322,6 +322,10 @@ When conducting authorized tests:
 3. Include CSV exports (properly secured) as evidence
 
 ---
+## **Workflow**
+Discovery → Enumeration → Extraction → Reporting
+![SQLmap Workflow](diagram.svg)
+---
 
 ## **Conclusion**
 This guide provides a complete ethical framework for SQL injection testing using SQLmap. Remember:
