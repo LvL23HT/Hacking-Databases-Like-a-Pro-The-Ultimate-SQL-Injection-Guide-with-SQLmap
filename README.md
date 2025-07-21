@@ -45,7 +45,8 @@ SQL injection remains one of the most critical web application vulnerabilities, 
 - **[Full Database Export in SQL Format](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#phase-5-full-database-export-in-sql-format)**
 - **[Optimizing Detection](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#optimizing-detection)**
 - **[Bypassing WAFs](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#bypassing-wafs)**
-- **[Common SQLmap Errors and How to Fix Them](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#common-sqlmap-errors-and-how-to-fix-them)
+- **[Common SQLmap Errors and How to Fix Them](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#%EF%B8%8F-common-sqlmap-errors-and-how-to-fix-them)**
+-  **[Workflow](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#workflow)**
 ---
 
 ## **Understanding SQLmap's Core Functionality**
