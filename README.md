@@ -36,7 +36,7 @@ SQL injection remains one of the most critical web application vulnerabilities, 
 
 ---
 ## *Quick Navigation*
-- **[Understanding --level and --risk in SQLmap](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#understanding---level-and---risk-in-sqlmap)**
+- **[Understanding --level and --risk in SQLmap](/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#understanding---level-and---risk-in-sqlmap)**
 - **[Vulnerability Identification](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#phase-1-vulnerability-identification)**
 - **[Database Enumeration](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#phase-2-database-enumeration)**
 - **[Table Discovery](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#phase-3-table-discovery)**
