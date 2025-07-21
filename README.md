@@ -45,6 +45,7 @@ SQL injection remains one of the most critical web application vulnerabilities, 
 - **[Full Database Export in SQL Format](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#phase-5-full-database-export-in-sql-format)**
 - **[Optimizing Detection](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#optimizing-detection)**
 - **[Bypassing WAFs](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#bypassing-wafs)**
+- **[Common SQLmap Errors and How to Fix Them](https://github.com/LvL23HT/Hacking-Databases-Like-a-Pro-The-Ultimate-SQL-Injection-Guide-with-SQLmap/blob/main/README.md#common-sqlmap-errors-and-how-to-fix-them)
 ---
 
 ## **Understanding SQLmap's Core Functionality**
@@ -291,6 +292,15 @@ sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 --tamper
 ```
 - `--tamper`: Modifies injection data to bypass filters
 
+---
+## **⚠️ Common SQLmap Errors and How to Fix Them**
+
+| Error                                      | Possible Cause                        | Solution                                  |
+|-------------------------------------------|----------------------------------------|-------------------------------------------|
+| `sqlmap requires Python 3.x`              | You're using Python 2.x                | Use `python3 sqlmap.py`                   |
+| `403 Forbidden` or `WAF Detected`         | Web app blocking automated scans       | Use `--random-agent` or `--tamper`        |
+| `empty response` or `no injection point`  | Parameter not injectable               | Try adding `--level=5 --risk=3`           |
+| `Can't connect to target`                 | Wrong URL or down host                 | Check the URL or try with `curl` first    |
 ---
 
 ## **Defensive Countermeasures**
